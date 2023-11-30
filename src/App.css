@@ -1,38 +1,64 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.app-container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-container {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.task-input {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.add-button {
+  padding: 8px;
+  background-color: #4caf50;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-list {
+  list-style: none;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.even-item {
+  background-color: #e0f7fa;
+  border: 1px solid #81d4fa;
+  padding: 8px;
+}
+
+.odd-item {
+  background-color: #b3e0f2;
+  border: 1px solid #4fc3f7;
+  padding: 8px;
+}
+
+.remove-button {
+  margin-left: 10px;
+  padding: 5px;
+  background-color: #e57373;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #90caf9;
+  color: white;
 }
